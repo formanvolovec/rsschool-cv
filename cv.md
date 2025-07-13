@@ -1,6 +1,6 @@
 # Eugene Emelin
 **Full stack JavaScript web developer**  
-Discord: eugenevolovec | Telegram: jack_spancer
+Discord: eugenevolovec | Telegram: jack_spancer | email: formanvolovec@gmail.com
 
 ## Summary  
 Full Stack developer. After moving to Poland, temporarily out of IT. Motivated by results, constantly learning and expanding my knowledge in IT. Team player with strong communication skills, effective in an office environment.
