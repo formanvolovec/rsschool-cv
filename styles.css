@@ -1,0 +1,252 @@
+/* Base styles */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --text-color: #333;
+  --light-text: #7f8c8d;
+  --background: #f5f5f5;
+  --card-bg: #ffffff;
+  --border-color: #eee;
+  --tech-bg: #e0f2fe;
+  --tech-text: #0369a1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background);
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  color: var(--light-text);
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contacts p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Section styles */
+.section {
+  margin-bottom: 30px;
+}
+
+.section h3 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section-content {
+  padding-left: 20px;
+}
+
+.section-content p {
+  margin-bottom: 10px;
+}
+
+.section-content ul {
+  list-style-position: outside;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.section-content li {
+  margin-bottom: 8px;
+}
+
+/* Job Experience Styles */
+.job {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.job:last-child {
+  border-bottom: none;
+}
+
+.job h4 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+.company {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 12px;
+  color: var(--light-text);
+  font-size: 0.95rem;
+}
+
+.job-type {
+  font-style: italic;
+}
+
+.job-date {
+  font-weight: 500;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.tech-pill {
+  background-color: var(--tech-bg);
+  color: var(--tech-text);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.tech-pill:hover {
+  transform: translateY(-2px);
+}
+
+.job-description {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Footer styles */
+.footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.logo {
+  height: 30px;
+  transition: transform 0.2s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* Icons */
+.fas, .fab {
+  color: var(--secondary-color);
+  font-size: 1.1em;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .header h2 {
+    font-size: 1.2rem;
+  }
+  
+  .contacts {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .section h3 {
+    font-size: 1.2rem;
+  }
+  
+  .job h4 {
+    font-size: 1.1rem;
+  }
+  
+  .job-meta {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
